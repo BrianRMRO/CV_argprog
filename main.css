@@ -1,0 +1,253 @@
+*{
+    font-family: sans-serif;
+}
+.edu{
+    color: #01003b;
+}
+.nombre{
+    color: #01003b;
+}
+body{
+    background-image: url(img/code-820275_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navegacion{
+    background-color:rgb(255, 255, 255, 0.3);
+}
+.foto{
+    width: 50%;
+    height: 40%;
+    float: right;
+    border-radius: 15%;
+    padding: 5px;
+    margin: auto;
+    border-left: 1px solid #ff1500;
+    border-bottom: 1px solid #ff1500;
+}
+
+.about{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px 40px;
+}
+.header{
+    display:block;
+    padding: auto;
+    margin: 20px;
+}
+.texto{
+    line-height: 1.2; 
+    font-size: 1em;
+    text-align: justify;
+    padding: 10px;
+}
+.row{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+}
+.education{
+    padding: 20px;
+}
+.education .edu-col {
+    position: relative;
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    border-left: 1px solid #ff1500;
+    border-bottom: 1px solid #ff1500;
+}
+
+.education .edu-col span {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.education .edu-col span::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: #ff1500;
+    top: 5px;
+    left: -26px;
+    border-radius: 5px;
+}
+
+.education .edu-col span i {
+    color: #ff1500;
+}
+
+.education .edu-col h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.education .edu-col p {
+    margin: 0;
+}
+
+.experiencia{
+    padding: 20px;
+}
+
+.experiencia .srv-col {
+    position: relative;
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    border-left: 1px solid #ff1500;
+    border-bottom: 1px solid #ff1500;
+}
+
+.experiencia .srv-col p {
+    margin: 0;
+}
+
+.experiencia .srv-col span {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.experiencia .srv-col span::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: #ff1500;
+    top: 5px;
+    left: -26px;
+    border-radius: 5px;
+}
+.experiencia .srv-col span i {
+    color: #ff1500;
+}
+.experiencia .srv-col h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.skill-bars{
+    padding: 5px 3px;
+    width: 600px;
+    border-radius: 10px;
+    text-align: left;
+}
+.skill-bars .titulo{
+  text-align: center;
+  color: #01003b;
+}
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+}
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+  text-align: center;
+}
+  .skill-bars .bar .info span{
+    text-align: center;
+    color: #01003b;
+    font-style: oblique;
+    font-weight: 500;
+    font-size: 18px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+}
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #816a6a;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+}
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #580606;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+ 
+  .bar .progress-line.html span{
+    width: 90%;
+}
+  .bar .progress-line.css span{
+    width: 70%;
+}
+  .bar .progress-line.JS span{
+    width: 65%;
+}
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+}
+  .progress-line.html span::after{
+    content: "90%";
+}
+  .progress-line.css span::after{
+    content: "70%";
+}
+  .progress-line.JS span::after{
+    content: "65%";
+}
