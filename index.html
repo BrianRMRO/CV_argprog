@@ -15,23 +15,72 @@
     </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
+   
     <div class="navegacion">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">Mi CV</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#header">Inicio</a>
-                <a class="nav-link" href="#education">Educación</a>
-                <a class="nav-link" href="#experiencia">Experiencia</a>
-             </div>
+                <a class="navbar-brand" href="#">Mi CV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#header">Inicio</a>
+                        <a class="nav-link" href="#education">Educación</a>
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Contacto
+                        </button>
+                    </div>
+                </div>
             </div>
-         </div>
         </nav>
     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Fromulario de contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body">
+                    <main role="main" class="container">
+                        <div class="">
+                            <div class="col-12">
+                                <form method="post" action="">
+                                    <div class="form-group">
+                                        <input name="nombre" required type="text" id="nombre"
+                                            class="form-control" placeholder="Tu nombre">
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="correo" required type="email" id="correo"
+                                            class="form-control" placeholder="Tu correo electrónico">
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="celular" required type="number" id="celular"
+                                            class="form-control" placeholder="Tu número de celular">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea required placeholder="Escribe tu mensaje"
+                                            class="form-control" name="mensaje" id="mensaje"
+                                            cols="30" rows="5"></textarea>    
+                                    </div>
+                                    <div class="form-group"> <!-- Este boton solo resetea el formulario porque si pongo type="submit" la pagina no funciona al hacer click -->
+                                        <button class="btn-success btn" onclick="popup()" type="reset"> 
+                                            Enviar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="header" id="header">
         <div class="conteainer-fluid">
@@ -77,7 +126,7 @@
                 <div class="content-header">
                     <h2 class="edu">Educación</h2>
                 </div>
-                <div class="col-md-6">
+                <div class="front col-md-6">
                     <div class="edu-col">
                         <span>desde Agosto de 2021 <i>a</i> Agosto del 2022</span>
                         <h3>Front End Developer</h3>
@@ -147,8 +196,6 @@
                         <p>Empresa: ---------</p>
                     </div>
                 </div>
-                
-               
             </div>
         </div>
     </div>
