@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="es">
+<head>
     
-    <meta charset='utf-8'>
+    <meta lang="es" charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>CV FRONTEND</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -12,32 +12,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="img/2666451.png"
 
-    </head>
+</head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
    
-    <div class="navegacion">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Mi CV</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#header">Inicio</a>
-                        <a class="nav-link" href="#education">Educación</a>
-                        <a class="nav-link" href="#experiencia">Experiencia</a>
-                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Contacto
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <div class="navbar-expand-lg">
+        <div class="container-fuild">
+            <span class="nav-bar" id="btnMenu"> <img class="principal" src="https://cdn.icon-icons.com/icons2/1603/PNG/512/computer-laptop-user-developer-programer_108610.png" alt=""> </span> 
+            <nav class="main-nav">
+            <ul class="menu" id="menu">
+                <li class="menu__item"> <a a class="btn btn-secondary" role="button" href="#header">Inicio</a></li>
+                <li class="menu__item"> <a a class="btn btn-secondary" role="button" href="#education">Educación</a></li>
+                <li class="menu__item"> <a a class="btn btn-secondary" role="button" href="#experiencia">Experiencia</a></li>
+                <li class="menu__item"> 
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Modal">
+                    Contacto
+                    </button>
+                </li>
+            </ul>
+            </nav>   
+        </div> 
+   </div> 
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
                 <div class="modal-header">
@@ -71,6 +68,11 @@
                                         <button class="btn-success btn" onclick="popup()" type="reset"> 
                                             Enviar
                                         </button>
+                                        <!-- Estos botones de redes sociales estan vacios a proposito, solo falta añadir el nombre de usuario al final del link de cada una -->
+                                        <a href="https://facebook.com/" target="_blank"><img class="shared" title="Facebook" src="https://cdn.icon-icons.com/icons2/1582/PNG/512/facebook_108044.png" alt="facebook"></a>
+                                        <a href="https://twitter.com/" target="_blank"><img class="shared" title="Twitter" src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491579542-yumminkysocialmedia22_83078.png" alt="Twitter"></a>
+                                        <a href="https://linkedin.com/" target="_blank"><img class="shared" title="Linkedin" src="https://cdn.icon-icons.com/icons2/805/PNG/512/linkedin_icon-icons.com_65929.png" alt="Linkedin"></a>
+                                        <a href="https://github.com/" target="_blank"><img class="shared" title="GitHub" src="https://cdn.icon-icons.com/icons2/2351/PNG/512/logo_github_icon_143196.png" alt="GitHub"></a>
                                     </div>
                                 </form>
                             </div>
