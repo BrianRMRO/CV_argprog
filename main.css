@@ -330,3 +330,15 @@ background-size: cover;
   .progress-line.JS span::after{
     content: "65%";
 }
+
+footer{
+  text-align: right;
+  color: #018835;
+  margin: 15px;
+}
+.link{
+  color:#816a6a ;
+}
+.link:hover{
+  opacity: 0.7;
+}
